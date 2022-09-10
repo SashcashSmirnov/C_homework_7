@@ -28,9 +28,10 @@ void Show2dArray(double[,] array)
     }
 }
 
-Console.Write("Input number of rows: ");
+Console.WriteLine("Создаем массив.");
+Console.Write("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input number of cols: ");
+Console.Write("Введите количество столбцов: ");
 int cols = Convert.ToInt32(Console.ReadLine());
 double[,] array = CreateRandom2dArray(rows, cols);
 Show2dArray(array);
@@ -73,9 +74,9 @@ void Show2dArray(int[,] array)
 
 void FindAndShowElement(int[,] array)
 {
-    Console.Write("Введите строку элемента: ");
+    Console.Write("Введите строку искомого элемента: ");
     int i = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Введите столбец элемента: ");
+    Console.Write("Введите столбец искомого элемента: ");
     int j = Convert.ToInt32(Console.ReadLine());
     if (i < 0 || i >= array.GetLength(0) || j < 0 || j >= array.GetLength(1))
     {
@@ -83,28 +84,20 @@ void FindAndShowElement(int[,] array)
     }
     else
     {
-        Console.Write($"Значение элемента [{i}, {j}] = [{array[i, j]}]");
+        Console.Write($"Значение искомого элемента [{i}, {j}] = [{array[i, j]}]");
     }
 }
 
-Console.Write("Input number of rows: ");
+Console.WriteLine("Создаем массив.");
+Console.Write("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input number of cols: ");
+Console.Write("Введите количество столбцов: ");
 int cols = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateRandom2dArray(rows, cols);
 Show2dArray(array);
 FindAndShowElement(array);
 
 */
-
-
-
-
-
-
-
-
-
 
 // Задача 52. Задайте двумерный массив из целых чисел. 
 // Найдите среднее арифметическое элементов в каждом столбце.
@@ -152,9 +145,10 @@ void CalcAverageRow(int[,] array)
     }
 }
 
-Console.Write("Input number of rows: ");
+Console.WriteLine("Создаем массив.");
+Console.Write("Введите количество строк: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input number of cols: ");
+Console.Write("Введите количество столбцов: ");
 int cols = Convert.ToInt32(Console.ReadLine());
 int[,] array = CreateRandom2dArray(rows, cols);
 Show2dArray(array);
